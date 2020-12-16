@@ -1,0 +1,14 @@
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+CMake Error at /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:165 (message):
+  Could NOT find Threads (missing: Threads_FOUND)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:458 (_FPHSA_FAILURE_MESSAGE)
+  /usr/share/cmake-3.18/Modules/FindThreads.cmake:234 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:112 (find_package)
+
+How the problem occurred:
+I pulled a docker image using Singularity, started a shell in the container and tried to build a software in shell. But cmake cannot find pthreads. This happened to two different docker images.
+
+Solution that worked for me:
+I used the remote builder (https://cloud.sylabs.io/home) instead. The software was built successfully.
