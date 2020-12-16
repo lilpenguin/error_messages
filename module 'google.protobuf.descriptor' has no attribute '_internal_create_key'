@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "examples/resnet50.py", line 1, in <module>
+    import taso as ts
+  File "/path/to/.conda/envs/onnx/lib/python3.6/site-packages/taso-0.1.0-py3.6-linux-x86_64.egg/taso/__init__.py", line 2, in <module>
+    import onnx
+  File "/path/to/.conda/envs/onnx/lib/python3.6/site-packages/onnx/__init__.py", line 9, in <module>
+    from onnx.external_data_helper import load_external_data_for_model, write_external_data_tensors
+  File "/path/to/.conda/envs/onnx/lib/python3.6/site-packages/onnx/external_data_helper.py", line 10, in <module>
+    from .onnx_pb import TensorProto, ModelProto
+  File "/path/to/.conda/envs/onnx/lib/python3.6/site-packages/onnx/onnx_pb.py", line 8, in <module>
+    from .onnx_ml_pb2 import *  # noqa
+  File "/path/to/.conda/envs/onnx/lib/python3.6/site-packages/onnx/onnx_ml_pb2.py", line 22, in <module>
+    create_key=_descriptor._internal_create_key,
+AttributeError: module 'google.protobuf.descriptor' has no attribute '_internal_create_key'
+
+Details on how this error occurred:
+I built TASO(https://github.com/jiazhihao/TASO) from source using a protobuf library installed locally, but the version of the protobuf that I installed was different from the one used by python.
+
+Solution that worked for me:
+Update the protobuf version used by python to match the one that I installed, which was protobuf 3.14.0.
+$ pip install --upgrade protobuf
+Successfully installed protobuf-3.14.0
+
