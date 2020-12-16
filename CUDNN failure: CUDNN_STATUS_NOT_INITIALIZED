@@ -1,0 +1,13 @@
+$ python examples/resnet50.py
+CUDNN failure: CUDNN_STATUS_NOT_INITIALIZED
+/path/to/taso/src/cudnn/ops_cudnn.cu:25
+Aborting...
+
+How this error happened:
+I installed TASO(https://github.com/jiazhihao/TASO) from source with CUDA 11.0 and a matching cudnn 8.0.4.30-11.0. But nvidia-smi gave me:
+Driver Version: 440.64.00
+The driver version was too low to support CUDA 11.0. Check compatibile driver versions with different cuda versions here:
+https://docs.nvidia.com/deploy/cuda-compatibility/index.html
+
+Solution that worked for me:
+I changed the cuda version to 10.1 and the cudnn version to a matching one (7.6.5.32-10.1), and the problem was solved.
