@@ -1,0 +1,61 @@
+
+============================================================================
+---- Processing 'frozen_lstm_l8s8h256_bs1.pb'
+============================================================================
+[INFO] 2020-12-18T02:38:15z src/nnfusion/frontend/tensorflow_import/tensorflow.cpp 18	Import Tensorflow Graph Size: [17000596]
+[INFO] 2020-12-18T02:38:15z src/nnfusion/frontend/tensorflow_import/util/graph_convert.cpp 3449	Converting Tensorflow Graph
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+[WARNING] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 211	Datatypes byte size are not same.
+1, 1, 1
+1, 1, 1
+[INFO] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 61	[0:0] Working for node: BasicLSTMCellZeroState/concat_0
+[INFO] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 61	[1:0] Working for node: BasicLSTMCellZeroState/Const
+[INFO] 2020-12-18T02:38:15z src/nnfusion/frontend/util/evaluator.hpp 61	[1:1] Working for node: BasicLSTMCellZeroState/Const_1
+[INFO] 2020-12-18T02:38:20z src/nnfusion/frontend/util/evaluator.hpp 143	  For node `BasicLSTMCellZeroState/concat_0`: get runtime output results of size 1
+[INFO] 2020-12-18T02:38:20z src/nnfusion/frontend/util/evaluator.hpp 186	Asking for Constant value from op-type: Concat
+[INFO] 2020-12-18T02:38:20z src/nnfusion/frontend/util/evaluator.hpp 188	Type of Output Value is int32_t
+[INFO] 2020-12-18T02:38:20z src/nnfusion/frontend/util/evaluator.hpp 61	[0:0] Working for node: BasicLSTMCellZeroState/concat_1_0
+[INFO] 2020-12-18T02:38:20z src/nnfusion/frontend/util/evaluator.hpp 61	[1:0] Working for node: BasicLSTMCellZeroState/Const_4
+[INFO] 2020-12-18T02:38:20z src/nnfusion/frontend/util/evaluator.hpp 61	[1:1] Working for node: BasicLSTMCellZeroState/Const_5
+[INFO] 2020-12-18T02:38:22z src/nnfusion/frontend/util/evaluator.hpp 143	  For node `BasicLSTMCellZeroState/concat_1_0`: get runtime output results of size 1
+[INFO] 2020-12-18T02:38:22z src/nnfusion/frontend/util/evaluator.hpp 186	Asking for Constant value from op-type: Concat
+[INFO] 2020-12-18T02:38:22z src/nnfusion/frontend/util/evaluator.hpp 188	Type of Output Value is int32_t
+[ERROR] 2020-12-18T02:38:22z src/nnfusion/util/errors.hpp 169	While validating op 'MatMul_1' of type 'Dot':
+Check failed: 'arg0_shape[axis_index_arg0].compatible(arg1_shape[axis_index_arg1])' at /nnfusion/src/nnfusion/core/operators/op_define/dot.cpp:103:
+Paired axes (axis 1 from arg0, axis 0 from arg1) do not have same length (arg0 shape: {0,0}, arg1 shape: {256,256}, reduction axes count: 1transA: 0, transB: 0).
