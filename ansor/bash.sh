@@ -83,8 +83,8 @@ echo "Running '${COMMAND[@]}' inside ${DOCKER_IMAGE_NAME}..."
 # pid 1 and SIGKILL is propagated to the process inside (jenkins can kill it).
 # ${DOCKER_BINARY} run --rm --pid=host\
 # pid can be settled with "singulairty shell --pid=host ..."
-mkdir /workspace
-mkdir /docker
+# mkdir /workspace
+# mkdir /docker
 #    -v ${WORKSPACE}:/workspace \
 #    -v ${SCRIPT_DIR}:/docker \
 #    -w /workspace \
