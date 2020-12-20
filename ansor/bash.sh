@@ -26,6 +26,9 @@
 # Usage2: docker/bash.sh <CONTAINER_NAME> [COMMAND]
 #     Execute command in the docker image, non-interactive
 #
+
+echo "Here0!"
+
 if [ "$#" -lt 2 ]; then
     echo "Usage: docker/bash.sh <backend> <CONTAINER_NAME> [COMMAND]"
     exit -1
@@ -33,6 +36,8 @@ fi
 
 BACKEND=("$1")
 DOCKER_IMAGE_NAME=("$2")
+
+echo "Here1!"
 
 if [ "$#" -eq 2 ]; then
     COMMAND="bash"
@@ -48,6 +53,8 @@ else
     COMMAND=("$@")
 fi
 
+echo "Here2!"
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WORKSPACE="$(pwd)"
 
@@ -57,6 +64,8 @@ if [[ ! -z $CUDA_VISIBLE_DEVICES ]]; then
 else
     CUDA_ENV=""
 fi
+
+echo "Here3!"
 
 if [[ "${BACKEND}" == "gpu" ]]; then
     if ! type "nvidia-docker" 1> /dev/null 2> /dev/null
