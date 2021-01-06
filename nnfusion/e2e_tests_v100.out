@@ -1,0 +1,1552 @@
+INFO:root:load config from: /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/config.json
+INFO:root:	PYTHONDONTWRITEBYTECODE = 1
+INFO:root:	HSA_USERPTR_FOR_PAGED_MEM = 0
+INFO:root:	LD_LIBRARY_PATH = /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/.singularity.d/libs:/usr/local/lib
+INFO:root:	HIP_VISIBLE_DEVICES = 1
+INFO:root:NVCC is existed.
+INFO:root:models folder = /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels
+INFO:root:testcase configs folder = /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/./testcase_configs
+INFO:root:nnfusion cli = /usr/local/bin/nnfusion
+INFO:root:device capability = CUDA
+INFO:root:enabled tags = {'CUDA': ['correctness', 'correctness_cuda_only'], 'ROCM': ['correctness', 'correctness_rocm_only']}
+models/ folder detected: /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels
+NNFusion CLI detected: /usr/local/bin/nnfusion
+INFO:root:found /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/./testcase_configs/naive_tests_onnx.json
+INFO:root:Load testcase: naive_cases_onnx #1 - bert_for_pretraining_without_loss_optimized_layer_norm_no_trainable_dropout.onnx
+INFO:root:Load testcase: naive_cases_onnx #2 - bert_for_pretraining_without_loss_optimized_layer_norm_bw_grad_output.onnx
+INFO:root:found /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/./testcase_configs/vortex_cpu_perf_test.json
+INFO:root:Load testcase: cpu_performance test #1
+INFO:root:found /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/./testcase_configs/naive_tests.json
+INFO:root:Load testcase: naive_cases #1
+INFO:root:Load testcase: naive_cases #2
+INFO:root:Load testcase: naive_cases #3
+INFO:root:Load testcase: naive_cases #4
+INFO:root:Load testcase: naive_cases #5
+INFO:root:create /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452
+INFO:root:Testing naive_cases_onnx #1 - bert_for_pretraining_without_loss_optimized_layer_norm_no_trainable_dropout.onnx
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests_onnx/bert_for_pretraining_without_loss_optimized_layer_norm_no_trainable_dropout.onnx
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests_onnx/bert_for_pretraining_without_loss_optimized_layer_norm_no_trainable_dropout.onnx -f onnx -p "batch:3;sequence:512;dynamic_prediction_count:20" -fdefault_device=CUDA  >> nnfusion.log
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(802): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(803): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(904): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(905): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1006): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1007): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1046): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1147): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1148): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1168): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1200): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1201): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1559): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(802): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(803): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(904): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(905): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1006): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1007): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1046): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1147): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1148): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1168): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1200): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1201): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1559): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(802): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(803): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(904): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(905): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1006): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1007): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1046): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1147): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1148): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1168): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1200): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1201): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1559): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(802): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(803): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(904): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(905): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1006): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1007): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1046): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1147): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1148): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1168): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1200): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1201): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1559): warning: variable "gridDim" was declared but never referenced
+
+INFO:root:CUDA	naive_cases_onnx #1 - bert_for_pretraining_without_loss_optimized_layer_norm_no_trainable_dropout.onnx	correctness_cuda_only	Succeed!
+INFO:root:Testing naive_cases #1
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_random-weights_bert_large.pb
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_random-weights_bert_large.pb -f tensorflow  -fdefault_device=CUDA  >> nnfusion.log
+Killed
+ERROR:root:Failed at nnfusion compiling phase.
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_random-weights_bert_large.pb
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_random-weights_bert_large.pb -f tensorflow  -fdefault_device=CUDA  >> nnfusion.log
+Killed
+ERROR:root:Failed at nnfusion compiling phase.
+INFO:root:CUDA	naive_cases #1	correctness	Failed
+INFO:root:Testing naive_cases #2
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_alexnet_infer_batch_1.pb
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_alexnet_infer_batch_1.pb -f tensorflow  -fdefault_device=CUDA  >> nnfusion.log
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(351): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(356): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(401): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(406): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(451): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(456): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(501): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(506): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(551): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(554): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(587): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(590): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(351): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(356): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(401): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(406): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(451): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(456): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(501): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(506): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(551): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(554): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(587): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(590): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(351): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(356): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(401): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(406): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(451): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(456): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(501): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(506): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(551): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(554): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(587): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(590): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(351): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(356): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(401): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(406): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(451): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(456): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(501): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(506): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(551): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(554): warning: variable "strides1" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(587): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(590): warning: variable "strides1" was declared but never referenced
+
+INFO:root:CUDA	naive_cases #2	correctness	Succeed!
+INFO:root:Testing naive_cases #3
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_resnet50_infer_batch_1.pb
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_resnet50_infer_batch_1.pb -f tensorflow  -fdefault_device=CUDA  >> nnfusion.log
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1040): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1067): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1239): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1266): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1329): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1356): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1419): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1446): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(299): warning: function "reduceMax" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1040): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1067): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1239): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1266): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1329): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1356): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1419): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1446): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(299): warning: function "reduceMax" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1040): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1067): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1239): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1266): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1329): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1356): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1419): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1446): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(299): warning: function "reduceMax" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1040): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1067): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1239): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1266): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1329): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1356): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1419): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1446): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(299): warning: function "reduceMax" was declared but never referenced
+
+INFO:root:CUDA	naive_cases #3	correctness	Succeed!
+INFO:root:Testing naive_cases #4
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_vgg11_infer_batch_1.pb
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_vgg11_infer_batch_1.pb -f tensorflow  -fdefault_device=CUDA  >> nnfusion.log
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(370): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(417): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(464): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(511): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(558): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(370): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(417): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(464): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(511): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(558): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(370): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(417): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(464): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(511): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(558): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(370): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(417): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(464): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(511): warning: variable "strides3" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(558): warning: variable "strides3" was declared but never referenced
+
+INFO:root:CUDA	naive_cases #4	correctness	Succeed!
+INFO:root:Testing naive_cases #5
+INFO:root:Compiling /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_inception3_infer_batch_1.pb
+INFO:root:cd /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452 && /usr/local/bin/nnfusion /home1/qinyiluo/rammer/nnfusion/test/nnfusion/scripts/../../../../frozenmodels/pipeline/naive_tests/simple_tests/frozen_inception3_infer_batch_1.pb -f tensorflow  -fdefault_device=CUDA  >> nnfusion.log
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1164): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1290): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1317): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1372): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1373): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1431): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1432): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1448): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1449): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1465): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1466): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1585): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1839): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1840): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2045): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2046): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2062): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2063): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2079): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2080): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2101): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2525): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2595): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2622): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2649): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3144): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3145): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3203): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3407): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3521): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3639): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3640): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3656): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3657): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3678): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3757): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3784): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3982): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4009): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4129): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4130): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4146): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4147): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4268): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4269): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4285): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4307): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4376): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4377): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4393): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4394): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4415): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4486): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4513): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4716): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4965): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4966): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5023): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5050): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5112): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5113): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5134): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5258): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5259): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5275): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5276): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5388): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5389): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5405): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5406): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5427): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5658): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5685): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5765): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5766): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5837): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5864): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5915): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5916): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6211): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6212): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6228): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6229): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6313): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6363): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6364): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6380): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6381): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6425): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6426): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6442): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6443): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6508): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6535): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6628): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6713): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6714): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6730): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6731): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6752): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6947): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7120): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7121): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7137): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7138): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7402): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7403): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7419): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7420): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7441): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7520): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7547): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8062): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8481): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9246): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9273): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9486): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9552): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9579): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9746): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9773): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9970): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9971): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10040): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10041): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10057): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10058): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10383): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10479): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10480): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12382): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12409): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12436): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(13709): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1164): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1290): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1317): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1372): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1373): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1431): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1432): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1448): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1449): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1465): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1466): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1585): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1839): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1840): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2045): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2046): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2062): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2063): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2079): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2080): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2101): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2525): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2595): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2622): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2649): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3144): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3145): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3203): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3407): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3521): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3639): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3640): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3656): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3657): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3678): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3757): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3784): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3982): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4009): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4129): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4130): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4146): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4147): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4268): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4269): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4285): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4307): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4376): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4377): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4393): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4394): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4415): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4486): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4513): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4716): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4965): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4966): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5023): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5050): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5112): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5113): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5134): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5258): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5259): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5275): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5276): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5388): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5389): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5405): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5406): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5427): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5658): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5685): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5765): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5766): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5837): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5864): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5915): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5916): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6211): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6212): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6228): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6229): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6313): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6363): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6364): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6380): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6381): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6425): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6426): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6442): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6443): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6508): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6535): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6628): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6713): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6714): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6730): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6731): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6752): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6947): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7120): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7121): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7137): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7138): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7402): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7403): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7419): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7420): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7441): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7520): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7547): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8062): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8481): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9246): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9273): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9486): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9552): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9579): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9746): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9773): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9970): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9971): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10040): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10041): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10057): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10058): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10383): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10479): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10480): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12382): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12409): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12436): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(13709): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1164): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1290): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1317): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1372): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1373): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1431): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1432): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1448): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1449): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1465): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1466): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1585): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1839): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1840): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2045): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2046): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2062): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2063): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2079): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2080): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2101): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2525): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2595): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2622): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2649): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3144): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3145): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3203): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3407): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3521): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3639): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3640): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3656): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3657): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3678): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3757): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3784): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3982): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4009): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4129): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4130): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4146): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4147): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4268): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4269): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4285): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4307): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4376): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4377): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4393): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4394): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4415): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4486): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4513): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4716): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4965): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4966): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5023): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5050): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5112): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5113): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5134): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5258): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5259): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5275): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5276): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5388): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5389): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5405): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5406): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5427): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5658): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5685): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5765): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5766): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5837): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5864): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5915): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5916): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6211): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6212): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6228): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6229): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6313): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6363): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6364): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6380): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6381): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6425): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6426): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6442): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6443): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6508): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6535): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6628): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6713): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6714): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6730): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6731): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6752): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6947): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7120): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7121): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7137): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7138): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7402): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7403): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7419): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7420): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7441): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7520): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7547): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8062): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8481): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9246): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9273): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9486): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9552): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9579): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9746): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9773): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9970): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9971): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10040): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10041): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10057): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10058): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10383): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10479): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10480): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12382): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12409): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12436): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(13709): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1164): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1165): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1290): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1317): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1372): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1373): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1431): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1432): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1448): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1449): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1465): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1466): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1558): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1585): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1839): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(1840): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2045): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2046): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2062): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2063): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2079): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2080): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2101): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2525): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2595): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2622): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(2649): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3144): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3145): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3203): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3407): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3521): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3639): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3640): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3656): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3657): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3678): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3757): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3784): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(3982): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4009): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4129): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4130): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4146): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4147): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4268): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4269): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4285): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4307): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4376): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4377): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4393): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4394): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4415): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4486): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4513): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4716): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4965): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(4966): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5023): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5050): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5112): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5113): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5134): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5258): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5259): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5275): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5276): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5388): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5389): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5405): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5406): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5427): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5658): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5685): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5765): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5766): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5837): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5864): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5915): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(5916): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6211): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6212): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6228): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6229): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6286): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6313): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6363): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6364): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6380): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6381): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6425): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6426): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6442): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6443): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6508): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6535): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6628): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6713): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6714): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6730): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6731): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6752): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(6947): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7120): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7121): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7137): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7138): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7402): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7403): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7419): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7420): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7441): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7520): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(7547): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8062): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(8481): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9246): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9273): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9486): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9487): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9552): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9579): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9746): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9773): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9970): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(9971): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10040): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10041): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10057): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10058): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10383): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10462): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10463): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10479): warning: variable "blockDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(10480): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12382): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12409): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(12436): warning: variable "gridDim" was declared but never referenced
+
+/tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452/nnfusion_rt/cuda_codegen/nnfusion_rt.cu(13709): warning: variable "gridDim" was declared but never referenced
+
+INFO:root:CUDA	naive_cases #5	correctness	Succeed!
+INFO:root:remove /tmp/1132cc95-b7ff-4455-a6c9-f59d27a94452
+Unsupported output: Iteration time 26.102783 ms
+NNFusion CLI detected: /usr/local/bin/nnfusion
+=========================================
+
+
+d14-05.hpc.usc.edu	E2E Test report
+
+
+=========================================
+
+CUDA	naive_cases_onnx #1 - bert_for_pretraining_without_loss_optimized_layer_norm_no_trainable_dropout.onnx	correctness_cuda_only	Succeed!
+CUDA	naive_cases #1	correctness	Failed
+CUDA	naive_cases #2	correctness	Succeed!
+CUDA	naive_cases #3	correctness	Succeed!
+CUDA	naive_cases #4	correctness	Succeed!
+CUDA	naive_cases #5	correctness	Succeed!
